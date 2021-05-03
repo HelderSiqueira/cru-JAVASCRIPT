@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"></link>
+    <title>CRUD - JS</title>
+</head>
+<body>
+    <header id="cabecalho"> 
+        <h1>Clientes - LionWeb</h1>
+    </header>
+    <div id="containerTela">
+        <section id="containerCadastro">
+            <button>Cadastrar cliente</button>
+        </section>
+        <section id="tabelaClientes">
+            <div id="tituloCadastro">
+                <label>Nome</label>
+                <label>E-mail</label>
+                <label>Celular</label>
+                <label>Cidade</label>
+                <label>Ação</label>
+            </div>
+            <div id="clientesCadastrados">
+                <div class="clienteNome">Fulano Exemplo de Tal</div>
+                <div class="clienteEmail">Fulano.exemplo@gmail.com</div>
+                <div class="clienteCelular">11 1111-1111</div>
+                <div class="clienteCidade">Cidade de Exemplo</div>
+                <div class="clienteAcao">
+                    <button id="buttonLimpar">Limpar</button>
+                    <button id="buttonExcluir">Excluir</button>
+                </div>
+            </div>
+            <div id="clientesCadastrados">
+                <div class="clienteNome">Fulano Exemplo de Tal</div>
+                <div class="clienteEmail">Fulano.exemplo@gmail.com</div>
+                <div class="clienteCelular">11 1111-1111</div>
+                <div class="clienteCidade">Cidade de Exemplo</div>
+                <div class="clienteAcao">
+                    <button id="buttonLimpar">Limpar</button>
+                    <button id="buttonExcluir">Excluir</button>
+                </div>
+            </div>
+        </section>
+        <!--//COMEÇO DO FORMULARIO POP-UP-->
+        <form id="novoCliente">
+            <div id="novoClienteTitulo">NOVO CLIENTE</div>
+            <div id="fechar">X</div>
+            <div id="novoCadastroAcima">
+                <input id="novoNome" type="text" placeholder="Nome e sobrenome"></input>
+                <input id="novoEmail" type="text" placeholder="E-mail"></input>
+            </div>
+            <div id="novoCadastroAbaixo">    
+                <input id="novoCelular" type="text" placeholder="Celular"></input>
+                <input id="novoCidade" type="text" placeholder="Cidade"></input>
+            </div>
+            <div id="rodapeCadastro">
+                <button id="buttonSalvar">Salvar</button>
+                <button id="buttonCancelar">Cancelar</button>
+            </div>
+        </form>
+        <!--FINAL DO FORMULARIO POP-UP-->
+    </div>    
+    <div id="containerRodape">
+        Copyright © Hélder Siqueira
+    </div>
+</body>
+</html>
